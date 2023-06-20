@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="estilos/cell.css" @media="screen and (orientation: portrait)">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>BackDiagnostics</h1>
+        <h3>Armazene seus dados com excelencia!</h3>
+    </header>
+    <main>
+        <table>
+            <caption>Diagnostico Diário</caption>
+            <thead>
+                <tr>
+                    <th><label for="ipressao">Pressao:</label><input type="number" name="Pressao" id="ipressao"></th>
+                    <th><label for="iglicose">Glicose:</label><input type="number" name="Glicose" id="iglicose"></th>
+                    <th><label for="ipeso">Peso:</label><input type="number" name="Peso" id="ipeso"></th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>Pressao_1</td>
+                        <td>Glicose_1</td>
+                        <td>Peso_1</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Pessao_2</td>
+                        <td>Glicose_2</td>
+                        <td>Peso_2</td>
+                    </tr>
+                </tfoot>
+            </thead>
+        </table>
+    </main>
+    <script src="scripts/javaScript.js"></script>
+</body>
+</html>
