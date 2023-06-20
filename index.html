@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="estilos/cell.css" @media="screen and (orientation: portrait)">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>BackDiagnostics</h1>
@@ -17,27 +19,34 @@
             <caption>Diagnostico Diário</caption>
             <thead>
                 <tr>
-                    <th><label for="ipressao">Pressao: </label><input type="number" name="Pressao" id="ipressao" class="input_one"></th>
-                    <th><label for="iglicose">Glicose: </label><input type="number" name="Glicose" id="iglicose" class="input_one"></th>
-                    <th><label for="ipeso">Peso:</label><input type="number" name="Peso" id="ipeso" class="input_one"></th>
+                    <th><label for="ipressao">Pressao: </label><input type="number" name="Pressao" id="ipressao"
+                            class="input_one"></th>
+                    <th><label for="iglicose">Glicose: </label><input type="number" name="Glicose" id="iglicose"
+                            class="input_one"></th>
+                    <th><label for="ipeso">Peso:</label><input type="number" name="Peso" id="ipeso" class="input_one">
+                    </th>
                 </tr>
-                <tbody>
-                    <tr>
-                        <td>Pressao_1</td>
-                        <td>Glicose_1</td>
-                        <td>Peso_1</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Pessao_2</td>
-                        <td>Glicose_2</td>
-                        <td>Peso_2</td>
-                    </tr>
-                </tfoot>
             </thead>
+            <tbody>
+                <tr>
+                    <td>Pressao_1</td>
+                    <td>Glicose_1</td>
+                    <td>Peso_1</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Pessao_2</td>
+                    <td>Glicose_2</td>
+                    <td>Peso_2</td>
+                </tr>
+            </tfoot>
         </table>
+        <div id="idiv">
+            <button type="submit" onclick="saveDate()">Salvar</button>
+        </div>
     </main>
     <script src="scripts/javaScript.js"></script>
 </body>
+
 </html>
