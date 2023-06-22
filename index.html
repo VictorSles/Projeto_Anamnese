@@ -16,6 +16,7 @@
         <h3>Armazene seus dados com excelencia!</h3>
     </header>
     <main>
+        <div id="calendar"></div>
         <form action="document.php" id="iform">
             <label for="ipressao" class="Clabel">Pressao: </label><input type="number" name="Pressao" id="ipressao"
                 class="Cinput">
@@ -24,12 +25,13 @@
             <label for="ipeso" class="Clabel">Peso:</label><input type="number" name="Peso" id="ipeso" class="Cinput">
         </form>
         <div id="idiv_two">
-            <button type="submit" onclick="saveDate()">Salvar</button>
+            <button type="submit" onclick="saveDate()" id="botao">Salvar</button>
         </div>
         <table>
             <caption>Insira os Dados</caption>
             <thead>
                 <tr>
+                    <th><span class="material-symbols-outlined">calendar_month</span>Data</th>
                     <th><span class="material-symbols-outlined">health_metrics</span>Pressao</th>
                     <th><span class="material-symbols-outlined">bloodtype</span>Glicose</th>
                     <th><span class="material-symbols-outlined">heat_pump_balance</span>Peso</th>
