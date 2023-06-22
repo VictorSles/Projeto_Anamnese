@@ -1,0 +1,112 @@
+@media screen and (max-width: 800px){
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    :root {
+        --cabecalho: #00A32E;
+        --caption_color: #09BA6D;
+        --buttom: #40F52B;
+    }
+    
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+    }
+    
+    header {
+        background-color: var(--cabecalho);
+        padding: 40px;
+        color: whitesmoke;
+        font-size: 1.4em;
+    }
+    div#idiv_tree{
+        text-align: center;
+    }
+    
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 40px;
+    
+    }
+    
+    caption {
+        border: 1px solid black;
+        padding: 30px;
+        font-size: 1.4em;
+        background-color: var(--caption_color);
+        color: whitesmoke;
+        font-weight: bolder;
+    }
+    
+    thead>tr,
+    th {
+        padding: 30px;
+        text-align: center;
+        background-color: #14ff99;
+        color: rgb(0, 0, 0);
+        font-size: 1.3em;
+    }
+    
+    tr, td{
+        border: 1px solid black;
+        padding: 30px;
+    }
+    
+    .cdiv {
+        margin-bottom: 20px;
+    }
+    
+    .material-symbols-outlined {
+        color: red;
+        margin-right: 10px;
+    }
+    
+    input#ipressao {
+        height: 30px;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1em;
+    }
+    
+    input#iglicose {
+        height: 30px;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1em;
+    }
+    
+    input#ipeso {
+        height: 30px;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1em;
+    }
+    div#idiv_two{
+        text-align: center;
+    
+    }
+    .Clabel{
+        font-size: 1em;
+        font-weight: bolder;
+    }
+    button {
+        background-color: rgb(0, 255, 0);
+        border: none;
+        color: whitesmoke;
+        font-weight: bolder;
+        width: 150px;
+        height: 50px;
+        border-radius: 30px;
+        font-size: 1.3em;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.342);
+    }
+    
+    button:hover {
+        background-image: linear-gradient(to right, #35663E, #6CCC18);
+        transition: 0.7s;
+    }
+}
