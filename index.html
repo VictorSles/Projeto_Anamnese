@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,47 +18,28 @@
     </header>
     <main>
         <form action="document.php">
-            <div class="cdiv">
-                <label for="ipressao">Pressao: </label><input type="number" name="Pressao" id="ipressao"
-                    class="input_one">
-            </div>
-            <div class="cdiv">
-                <label for="iglicose">Glicose: </label><input type="number" name="Glicose" id="iglicose"
-                    class="input_two">
-            </div>
-            <div>
-                <label for="ipeso">Peso:</label><input type="number" name="Peso" id="ipeso" class="input_tree">
-            </div>
+            <label for="ipressao" class="Clabel">Pressao: </label><input type="number" name="Pressao" id="ipressao"
+                class="Cinput">
+            <label for="iglicose" class="Clabel">Glicose: </label><input type="number" name="Glicose" id="iglicose"
+                class="Cinput">
+            <label for="ipeso" class="Clabel">Peso:</label><input type="number" name="Peso" id="ipeso" class="Cinput">
         </form>
         <div id="idiv_two">
             <button type="submit" onclick="saveDate()">Salvar</button>
         </div>
-        <div id="idiv_tree">
-            <table>
-                <caption>Insira os Dados</caption>
-                <thead>
-                    <tr>
-                        <th><span class="material-symbols-outlined">health_metrics</span>Pressao</th>
-                        <th><span class="material-symbols-outlined">bloodtype</span>Glicose</th>
-                        <th><span class="material-symbols-outlined">heat_pump_balance</span>Peso</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pressao_1</td>
-                        <td>Glicose_1</td>
-                        <td>Peso_1</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Pessao_2</td>
-                        <td>Glicose_2</td>
-                        <td>Peso_2</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
+        <table>
+            <caption>Insira os Dados</caption>
+            <thead>
+                <tr>
+                    <th><span class="material-symbols-outlined">health_metrics</span>Pressao</th>
+                    <th><span class="material-symbols-outlined">bloodtype</span>Glicose</th>
+                    <th><span class="material-symbols-outlined">heat_pump_balance</span>Peso</th>
+                </tr>
+            </thead>
+        </table>
+            <div id="idiv_tree" class="divClass">
+
+            </div>
     </main>
     <script src="scripts/javaScript.js"></script>
 </body>
