@@ -21,3 +21,11 @@ function saveDate() {
         peso.value = "";
     }
 }
+function menu(){
+    let form = document.getElementById("iform");
+    if(form.style.display==`block`){
+        form.style.display=`none`;
+    }else{
+        form.style.display=`block`;
+    }
+}

@@ -17,7 +17,8 @@
         <h3>Armazene seus dados com excelencia!</h3>
     </header>
     <main>
-        <form action="document.php">
+        <span class="material-symbols-outlined" onclick="menu()" id="imenu">menu_book</span>
+        <form action="document.php" id="iform">
             <label for="ipressao" class="Clabel">Pressao: </label><input type="number" name="Pressao" id="ipressao"
                 class="Cinput">
             <label for="iglicose" class="Clabel">Glicose: </label><input type="number" name="Glicose" id="iglicose"
@@ -37,9 +38,9 @@
                 </tr>
             </thead>
         </table>
-            <div id="idiv_tree" class="divClass">
+        <div id="idiv_tree" class="divClass">
 
-            </div>
+        </div>
     </main>
     <script src="scripts/javaScript.js"></script>
 </body>
