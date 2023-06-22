@@ -8,6 +8,8 @@ let ano = data.getFullYear();
 let mes = data.getMonth() + 1;
 let dia = data.getDate();
 let dia_semana = data.getDay();
+let hora = data.getHours();
+let minuto = data.getMinutes();
 let dia_semanaToDataBase = "";
 function correction(x) {
     if (x < 10) {
@@ -39,7 +41,7 @@ switch (dia_semana) {
         dia_semanaToDataBase = "Sábado";
         break;
 }
-let official_date = (ano + "/" + correction(mes) + "/" + correction(dia) + `</br>` + `${dia_semanaToDataBase}`);
+let official_date = (ano + "/" + correction(mes) + "/" + correction(dia) + `</br>` + correction(hora) +":"+ correction(minuto)+`</br>`+ `${dia_semanaToDataBase}`);
 calendar.innerHTML = official_date;
 console.log(official_date);
 function saveDate() {
@@ -61,13 +63,5 @@ function saveDate() {
         glicose.value = "";
         pressao.value = "";
         peso.value = "";
-    }
-}
-function menu() {
-    let form = document.getElementById("iform");
-    if (form.style.display == `block`) {
-        form.style.display = `none`;
-    } else {
-        form.style.display = `block`;
     }
 }
