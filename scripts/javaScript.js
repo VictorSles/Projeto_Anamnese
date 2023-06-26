@@ -41,13 +41,14 @@ switch (dia_semana) {
         dia_semanaToDataBase = "Sábado";
         break;
 }
-let official_date = (ano + "/" + correction(mes) + "/" + correction(dia) + `</br>` + correction(hora) +":"+ correction(minuto)+`</br>`+ `${dia_semanaToDataBase}`);
+let official_date = (ano + "/" + correction(mes) + "/" + correction(dia) + `</br>` + correction(hora) + ":" + correction(minuto) + `</br>` + `${dia_semanaToDataBase}`);
 calendar.innerHTML = official_date;
 console.log(official_date);
 function saveDate() {
     glicose1 = glicose.value;
     pressao1 = pressao.value;
     peso1 = peso.value;
+    let botao = document.getElementById("botao");
     if ((glicose1 != "") && (pressao1 != "") && (peso1 != "")) {
         let dates = `
         <table style="margin-top: 0%; width: 100%">
@@ -63,5 +64,22 @@ function saveDate() {
         glicose.value = "";
         pressao.value = "";
         peso.value = "";
+    }else{
+        window.alert("Voce precisa preencher todos os dados para prosseguir.")
     }
 }
+glicose.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        saveDate()
+    }
+});
+peso.addEventListener("keyup", function (eventTwo) {
+    if (eventTwo.keyCode === 13) {
+        saveDate();
+    }
+});
+pressao.addEventListener("keyup", function (eventTree) {
+    if (eventTree.keyCode === 13) {
+        saveDate();
+    }
+})
